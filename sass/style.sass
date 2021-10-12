@@ -1,0 +1,144 @@
+@font-face
+	font-family: Arial - Bold MT
+	src: url("/fonts/ARIALBOLDMT.woff") format('woff')
+*
+	font-family: Arial - Bold MT	
+.container
+	max-width: 580px
+	padding-top: 7px
+	.card
+		width: 136px
+		height: 310px
+		border: none
+		position: initial
+		.content
+			margin-top: 12px
+		.card-img
+			width: 135px
+			height: 135px
+			margin: 0 auto
+		.card-body
+			text-align: -webkit-center
+			padding: 4px 0 4px 0
+			.card-text
+				font-size: 13px
+				font-weight: 600
+				line-height: 16px
+				margin-top: 10px
+				width: 130px
+				text-align: left
+				height: 42px
+			.btn
+				background-color: #353535
+				border-radius: 0
+				margin-top: 0
+				width: 74px
+				height: 30px
+				border: none
+				padding: 6px 5px 12px 7px
+				font-size: 12px
+				&:hover
+					background-color: #ff8c69
+					color: black
+					transform: scale(1.05)
+					border: 1px solid black
+					font-size: 12px
+					padding: 5px 1px 6px 2px
+					font-weight: 600
+			.stars
+				margin-top: 8px
+				margin-bottom: 10px
+				filter: brightness(60%) grayscale(1)
+		.card-row
+			padding: 0
+			padding-top: 14px
+			width: 100%
+			.card-price
+				font-size: 12px
+				font-weight: bolder
+				width: 50px
+				padding: 0
+				margin-right: 8px
+				span
+					font-size: 18px
+		.descr
+			display: none
+			font-weight: 600
+		&:hover
+			@media (min-width: 502px)
+				width: 160px
+				height: 510px
+				border: 3px solid #eb5c3e
+				border-radius: 0
+				background-image: linear-gradient(to top, #f6f6f6 0%, #ffffff 100%)
+				position: absolute
+				margin-left: -12px
+				box-shadow: 0 0 10px
+				.content
+					margin-top: 9px
+				.card-body
+					padding: 12px 0 44px 0
+					.card-text
+						margin-top: 1px
+					.btn
+						background-color: #da531e
+						transition: 0.5s all
+					.stars
+						filter: none
+					.card-row
+						width: 88%
+					.descr
+						display: block
+						width: 137px
+						height: 176px
+						color: #636363
+						font-size: 12px
+						font-weight: 400
+						line-height: 14px
+						text-align: left
+
+@media (max-width: 501px)
+	.container
+		.row
+			display: contents
+			.card
+				width: 70%
+				height: 250px
+				margin: 0 auto
+				margin-bottom: 10px
+				&:hover
+					width: 90%
+					height: 310px
+					border: 3px solid #eb5c3e
+					border-radius: 0
+					background-image: linear-gradient(to top, #f6f6f6 0%, #ffffff 100%)
+					.card-img
+						width: 100px
+						height: 100px
+					.btn
+						background-color: #da531e
+						transition: 0.5s all
+					.descr
+						display: block
+						font-size: 12px
+						line-height: 14px
+						text-align: left
+						margin: 0 6px
+						font-weight: 400
+					.stars
+						filter: none
+				.card-text
+					line-height: 16px
+					margin-top: 6px
+					height: 20px
+					width: 220px
+					text-align: center
+					margin-bottom: 18px
+				.card-row
+					.card-price
+						display: contents
+				.stars
+					margin-top: 1px
+					margin-bottom: 1px
+			.last
+				margin-bottom: 10px

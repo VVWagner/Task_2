@@ -5,12 +5,11 @@
 	font-family: Arial - Bold MT
 
 .container
-	max-width: 550px
+	max-width: 552px
 	padding-top: 7px
 	.row
 		--bs-gutter-x: 3rem
 		.card
-			width: 136px
 			height: 200px
 			margin-bottom: 100px
 			border: none
@@ -31,55 +30,56 @@
 					margin-top: 10px
 					width: 130px
 					text-align: left
-					height: 42px
-				.btn
-					background-color: #353535
-					border-radius: 0
-					margin-top: 0
-					width: 74px
-					height: 30px
-					border: none
-					padding: 6px 5px 12px 7px
-					font-size: 12px
-					&:hover
-						background-color: #ff8c69
-						color: black
-						transform: scale(1.05)
-						border: 1px solid black
-						font-size: 12px
-						padding: 5px 1px 6px 2px
-						font-weight: 600
+					height: 50px
 				.stars
 					margin-top: 8px
 					margin-bottom: 10px
 					filter: brightness(60%) grayscale(1)
-			.card-row
-				padding: 0
-				padding-top: 14px
-				width: 100%
-				.card-price
-					font-size: 12px
-					font-weight: bolder
-					width: 50px
+				.card-row
 					padding: 0
-					margin-right: 8px
-					span
-						font-size: 18px
-			.descr
-				display: none
-				font-weight: 600
+					padding-top: 8px
+					width: 100%
+					display: flex
+					.card-price
+						font-size: 12px
+						font-weight: bolder
+						width: 50px
+						padding: 0
+						margin-right: 8px
+						span
+							font-size: 18px
+					.btn
+						background-color: #353535
+						border-radius: 0
+						margin-top: 0
+						width: 74px
+						height: 30px
+						border: none
+						padding: 6px 5px 12px 7px
+						font-size: 12px
+				.descr
+					display: none
+					font-weight: 400
+					width: 137px
+					height: 176px
+					color: #636363
+					font-size: 12px
+					line-height: 14px
+					text-align: left
 			&:hover
-				@media (min-width: 502px)
-					width: 160px
-					height: 510px
+				@media (min-width: 100px)
+					width: 162px
+					height: 500px
 					border: 3px solid #eb5c3e
 					border-radius: 0
 					background-image: linear-gradient(to top, #f6f6f6 0%, #ffffff 100%)
 					position: absolute
-					margin-left: -12px
+					margin-left: -9px
 					box-shadow: 0 0 10px
 					.content
 						margin-top: 9px
+					.card-img
+						margin-left: 0px
 					.card-body
 						padding: 13px 0 44px 0
 						.card-text
@@ -92,95 +92,131 @@
 							transition: 0.5s all
 						.card-row
 							width: 88%
+							margin-left: -6px
 						.descr
 							display: block
-							width: 137px
-							height: 176px
-							color: #636363
-							font-size: 12px
-							font-weight: 400
-							line-height: 14px
-							text-align: left
-
 		.up
 			&:hover
-				@media (min-width: 502px)
-					transform: translateY(-240px)
-					width: 160px
-					height: 510px
-					border: 3px solid #eb5c3e
-					border-radius: 0
-					background-image: linear-gradient(to top, #f6f6f6 0%, #ffffff 100%)
-					position: absolute
-					margin-left: -12px
-					box-shadow: 0 0 10px
+				@media (min-width: 100px)
+					height: 470px
+					transform: translateY(-170px)
 					.content
-						margin-top: 9px
+						margin-top: 1px
 					.card-body
-						padding: 13px 0 44px 0
+						padding: 1px 0 10px 0
+						display: flex
+						flex-direction: column-reverse
 						.card-text
-							margin-top: 1px
-						.btn
-							background-color: #da531e
-							transition: 0.5s all
-						.stars
-							filter: none
-							transition: 0.5s all
-						.card-row
-							width: 88%
+							margin-top: 10px
 						.descr
-							display: block
-							width: 137px
-							height: 176px
-							color: #636363
-							font-size: 12px
-							font-weight: 400
-							line-height: 14px
-							text-align: left
+							margin-left: 9px
+							margin-top: 5px
+						.card-row
+							padding-top: 8px
 			
 
-@media (max-width: 501px)
+@media (max-width: 650px)
 	.container
-		.row
-			display: contents
+		max-width: 360px
+		.col
+			display: flex
 			.card
-				width: 70%
-				height: 250px
-				margin: 0 auto
-				margin-bottom: 10px
+				width: 137px
 				&:hover
-					width: 90%
-					height: 310px
-					border: 3px solid #eb5c3e
-					border-radius: 0
-					background-image: linear-gradient(to top, #f6f6f6 0%, #ffffff 100%)
-					.card-img
-						width: 100px
-						height: 100px
-					.btn
-						background-color: #da531e
-						transition: 0.5s all
-					.descr
-						display: block
-						font-size: 12px
-						line-height: 14px
-						text-align: left
-						margin: 0 6px
-						font-weight: 400
-					.stars
-						filter: none
-				.card-text
-					line-height: 16px
-					margin-top: 6px
-					height: 20px
-					width: 220px
-					text-align: center
-					margin-bottom: 18px
-				.card-row
-					.card-price
-						display: contents
-				.stars
-					margin-top: 1px
-					margin-bottom: 1px
+					margin-left: -13px
+					.content
+						margin-top: 9px
+						.card-img
+							margin-left: 1px
+						.card-body
+							.card-text
+								margin-left: 1px
+							.card-row
+								padding-top: 8px
+								margin-left: 1px
+								display: flex
+								.card-price
+									padding-right: 2px
+									margin-left: 1px
+							.stars
+								margin-left: 1px
+								transition: none
+							.descr
+								display: block
+			.up
+				&:hover
+					height: 471px
+					transform: translateY(-179px)
+					.content
+						margin-top: 10px
+					.card-body
+						padding: 1px 0 1px 0
+						display: flex
+						flex-direction: column-reverse
+						.card-text
+							margin-top: 10px
+						.descr
+							margin-left: 9px
+							margin-top: 5px
+						.card-row
+							padding-top: 8px
+			.small
+				&:hover
+					height: 500px
+					transform: none
+					.content
+						margin-top: 12px
+					.card-body
+						padding: 1px 0 10px 0
+						display: flex
+						flex-direction: column
+						.card-text
+							margin-top: 10px
+						.descr
+							margin-left: 9px
+							margin-top: 5px
+							padding-bottom: 20px
+						.card-row
+							padding-top: 8px
 			.last
-				margin-bottom: 10px
+				&:hover
+					transform: translateY(-171px)
+					.content
+						.card-body
+							.main
+								&:hover
+									margin-top: -8px
+
+@media (max-width: 420px)
+	.container
+		max-width: 179px
+		.row
+			.col
+				&:hover
+					height: 300px
+				.card
+					&:hover
+						position: relative
+						height: 500px
+				.last
+					&:hover
+						height: 470px
+
+@media (max-width: 330px)
+	.container
+		max-width: 270px
+		.row
+			display: grid
+			.col
+				.card
+					width: 244px
+					.card-row
+						width: 59%
+					&:hover
+						width: 270px
+						.card-row
+							margin-left: 0
+							width: 55%
+						.descr
+							width: 230px
+					
